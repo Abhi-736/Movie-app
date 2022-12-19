@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    /*  border: 1px solid red */
+}
+
+body {
+    background-color: rgb(69, 18, 116);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    box-shadow: .5rem .5rem .5rem;
+    height: auto;
+    width: 200px;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.movie-info {
+    display: flex;
+    height: auto;
+    color: white;
+    display: flex;
+    background-color: rgb(102, 45, 146);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.movie-info h3 {
+    margin: 2px;
+    height: 100%;
+    font-size: 1rem;
+    padding-left: .5rem;
+}
+
+.movie-info span {
+    font-weight: bold;
+    margin: .25rem;
+    padding: .5rem;
+    background-color: rgb(116, 35, 192)
+}
+
+.movie-info span.green {
+    color: rgb(49, 178, 49);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
+}
+
+header {
+    padding: .75rem
+}
+
+.form {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+    background-color: rgb(83, 34, 121)
+}
+
+.form .search {
+    color: aliceblue;
+    border: none;
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color: rgb(69, 18, 116)
+}
+
+.form input::placeholder {
+    color: rgb(255, 255, 255)
+}
+
+.form .search:focus {
+    border: transparent;
+    background-color: rgb(63, 16, 99)
+}
+
+.movie .overview {
+    text-align: center;
+    max-height: 100%;
+    padding: .5rem;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* filter: blur(8px);
+    -webkit-filter: blur(.5px); */
+    transform: translateY(100%);
+    overflow: auto;
+}
+
+.movie:hover .overview {
+    transform: translateY(0%);
+    transition: all .5s ease-in;
+    background-color: rgb(224, 224, 206);
+    overflow: auto;
+}
+
+footer {text-align:center;
+    background-color: rgb(106, 55, 153);
+}
+small{text-align: center;}
